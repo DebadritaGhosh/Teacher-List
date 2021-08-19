@@ -59,7 +59,7 @@ const HomeScreen = ({ navigation, route }) => {
                 </View>
                 <Text style={styles.productsHeading}> Teacher's List </Text>
 
-                {teachers.length == 0 ? (
+                {!teachers || teachers.length == 0 ? (
                     <View style={styles.noData}>
                         <Text>Teacher List Empty</Text>
                     </View>
